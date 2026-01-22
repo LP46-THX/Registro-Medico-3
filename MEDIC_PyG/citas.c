@@ -386,7 +386,6 @@ static int solo_numeros_y_sep(const char *s, char sep){
 													
 													/* =========================
 													* Recetas
-													* (dejamos en su formato actual; no lo pediste cambiar)
 													* ========================= */
 													int citas_crear_receta(const char *id, const char *texto){
 														FILE *f = fopen(RUTA_CITAS_DISP, "r");
@@ -395,7 +394,7 @@ static int solo_numeros_y_sep(const char *s, char sep){
 														FILE *fcon = fopen(RUTA_CITAS_CONREC, "a");
 														if (!fcon){ fclose(f); return -2; }
 														
-														/* Si el archivo de 'con receta' no existe, ponemos cabecera nueva de citas */
+														/* Si el archivo de 'con receta' no existe, se pone cabecera nueva de citas */
 														asegurar_cabecera(RUTA_CITAS_CONREC,
 																		  "# Medic_L&G Citas v1",
 																		  "# ID|PACIENTE|MEDICO|ESPECIALIDAD|FECHA|HORA");

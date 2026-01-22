@@ -11,7 +11,7 @@
 #include <ctype.h>
 
 /* =========================
-* Colores ANSI (coherentes con tu main)
+* Colores ANSI 
 * ========================= */
 #define CLR_RESET "\x1b[0m"
 #define CLR_BLUE  "\x1b[34m"
